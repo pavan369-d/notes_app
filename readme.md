@@ -1,77 +1,77 @@
-# MERN Notes App
+## MERN Notes App
 
-## A full-stack MERN (MongoDB, Express, React, Node.js) application for managing notes with authentication, speech-to-text, and favorites functionality.
+ A full-stack MERN (MongoDB, Express, React, Node.js) application for managing notes with authentication, speech-to-text, and favorites functionality.
 
-# Features
+ Features
 
-## User Authentication (Signup/Login)
+ User Authentication (Signup/Login)
 
-## Create, Read, Update, and Delete Notes
+ Create, Read, Update, and Delete Notes
 
-## Speech-to-Text for Notes
+ Speech-to-Text for Notes
 
-## Favorite Notes (Stored in Local Storage)
+ Favorite Notes (Stored in Local Storage)
 
-## Search and Sort Notes
+ Search and Sort Notes
 
-# Installation & Setup
+ Installation & Setup
 
-## 1. Clone the Repository
+ 1. Clone the Repository
 
-## git clone https://github.com/your-username/mern-notes-app.git
-## cd mern-notes-app
+ git clone https://github.com/your-username/mern-notes-app.git
+ cd mern-notes-app
 
-## 2. Set Up the Backend
+ 2. Set Up the Backend
 
-## cd backend
-## npm install
+ cd backend
+ npm install
 
-## Create a .env file in the backend folder:
+ Create a .env file in the backend folder:
 
-## MONGO_URI=your_mongodb_connection_string
-## PORT=5000
-## CLIENT_URL=http://localhost:3000
-## JWT_SECRET=your_jwt_secret
+ MONGO_URI=your_mongodb_connection_string
+ PORT=5000
+ CLIENT_URL=http://localhost:3000
+ JWT_SECRET=your_jwt_secret
 
-## Start the Backend Server:
+ Start the Backend Server:
 
-## npm start
+ npm start
 
-## The backend will run on http://localhost:5000
+ The backend will run on http://localhost:5000
 
-## 3. Set Up the Frontend
+ 3. Set Up the Frontend
 
-## cd ../frontend
-## npm install
+ cd ../frontend
+ npm install
 
-## Create a .env file in the frontend folder:
+ Create a .env file in the frontend folder:
 
-## VITE_API_BASE_URL=http://localhost:5000/api
-## VITE_API_KEY=your_text_to_speech_api_key
+ VITE_API_BASE_URL=http://localhost:5000/api
+ VITE_API_KEY=your_text_to_speech_api_key
 
-## Start the Frontend:
+ Start the Frontend:
 
-## npm run dev
+ npm run dev
 
-## The frontend will run on http://localhost:3000
+ The frontend will run on http://localhost:3000
 
-## Set environment variables (MONGO_URI, PORT, CLIENT_URL, etc.).
+ Set environment variables (MONGO_URI, PORT, CLIENT_URL, etc.).
 
-## API Routes
+ API Routes
 
-## Authentication
+ Authentication
 
-## POST /api/auth/signup → Register a new user
+ POST /api/auth/signup → Register a new user
 
-## POST /api/auth/login → Login and receive JWT token
+ POST /api/auth/login → Login and receive JWT token
 
-## Notes
+ Notes
 
-## GET /api/notes/ → Fetch all notes
+ GET /api/notes/ → Fetch all notes
 
-## POST /api/notes/ → Create a new note
+ POST /api/notes/ → Create a new note
 
-## PUT /api/notes/:id → Update a note
+ PUT /api/notes/:id → Update a note
 
-## DELETE /api/notes/:id → Delete a note
+ DELETE /api/notes/:id → Delete a note
 
